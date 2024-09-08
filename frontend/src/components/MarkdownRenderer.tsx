@@ -9,14 +9,14 @@ const MarkdownRenderer = () => {
   return (
     <div className="flex justify-center max-w-screen-lg gap-2 m-auto">
       <Textarea
-        className="w-[50%] p-6 overflow-visible font-mono resize-none bg-inherit h-[650px]"
+        className="w-[50%] p-6 overflow-visible font-mono resize-none bg-inherit h-[650px] no-scrollbar"
         value={markdown}
         onChange={(e) => setMarkdown(e.target.value)}
         placeholder="Enter Some Markdown"
       />
       <Markdown
         rehypePlugins={[rehypeHighlight]}
-        className="p-6 overflow-auto prose-sm prose border w-[50%] dark:prose-invert max-h-[700px] rounded-md"
+        className="p-6 overflow-auto prose-sm prose border w-[50%] dark:prose-invert max-h-[650px] rounded-md no-scrollbar"
       >
         {markdown}
       </Markdown>
