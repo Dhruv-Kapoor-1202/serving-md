@@ -9,7 +9,7 @@ const MarkdownRenderer = () => {
   return (
     <div className="flex justify-center max-w-screen-lg gap-2 m-auto">
       <Textarea
-        className="w-[50%] p-6 overflow-visible font-mono resize-none bg-inherit h-[700px]"
+        className="w-[50%] p-6 overflow-visible font-mono resize-none bg-inherit h-[650px]"
         value={markdown}
         onChange={(e) => setMarkdown(e.target.value)}
         placeholder="Enter Some Markdown"
